@@ -1,0 +1,343 @@
+body {
+    height: 320%;
+    overflow-x: hidden;
+}
+
+.text {
+  color: white;
+  z-index: 0;
+	font-family: "Open Sans", sans-serif !important;
+  font-size: x-large;
+  font-weight: 500;
+  width: 500px;
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: wavy underline;
+}
+
+.list {
+  color: white;
+  flex: 1;
+  z-index: 0;
+	font-family: "Open Sans", sans-serif !important;
+  font-size: medium;
+  font-weight: 500;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+
+.act-bg {
+    background: linear-gradient(#80cbd1, #57BBC1, #408a8f, #2a5b5e, #142f30);
+    width: 200%;
+    height: 399%;
+    position:absolute;
+    right: 0px;
+    top: 950px;
+}
+
+/*
+-------------------------------
+| Wave animation starts here: |
+-------------------------------
+*/
+.animateColor {
+    background-color: #80cbd1;
+    }
+    
+    .container-water {
+      pointer-events: none;
+      opacity: 0.5;
+      height: 76%;
+      width:100%;
+      position:absolute;
+      bottom:-200px;
+      left:0;
+      background-color:#57BBC1;
+    }
+    .container-water2 {
+      pointer-events: none;
+      opacity: 0.5;
+      height: 70%;
+      width:100%;
+      position:absolute;
+      bottom:-200px;
+      left:0;
+      background-color:#57BBC1;
+    }
+    
+    .w {
+      position: absolute;
+      top: -120px;
+      width: 6400px;
+      height: 198px;
+    }
+    .wave {  
+      filter:blur(2px);
+      opacity: 1;
+    }
+    .wave2 {
+      filter:blur(3px);
+      opacity: 0.5;
+      animation: wave2 14s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    }
+    .wave3 {
+      filter:blur(3px);
+      opacity: 0.5;
+      animation: wave3 28s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    }
+    .wave4 {
+      filter:blur(1px);
+      opacity: 1;  
+      animation: wave4 14s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    }
+    
+    @keyframes wave {
+      0% {
+        margin-left: 0;
+      }
+      50% {
+        margin-left: -10%;
+      }
+        100% {
+        margin-left: 0%;
+      }
+    }
+    @keyframes wave2 {
+      0% {
+        margin-left: -40%;
+      }
+      50% {
+        margin-left: -30%;
+      }
+        100% {
+        margin-left: -40%;
+      }
+    }
+    @keyframes wave3 {
+      0% {
+        margin-left: 0%;
+      }
+      50% {
+        margin-left: 100%;
+      }
+        100% {
+        margin-left: 0%;
+      }
+    }
+    @keyframes wave4 {
+      0% {
+        margin-left: -30%;
+      }
+      50% {
+        margin-left: 0%;
+      }
+        100% {
+        margin-left: -30%;
+      }
+    }
+    
+    /*Wave animation ends here: */
+    
+    
+    @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+
+.content {
+  position: absolute;
+  left: 0;
+  margin-left: 30px;
+  margin-top: 5px;
+  top: 0;
+}
+
+
+.content2 {
+  position: absolute;
+  left: 0;
+  margin-left: 30px;
+  margin-top: 150px;
+  top: 0;
+  width: 100%;
+}
+
+.content h2 {
+	color: #fff;
+	font-size: 8em;
+	position: absolute;
+}
+
+.content h2:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 2px #03a9f4;
+}
+
+.content h2:nth-child(2) {
+	color: #03a9f4;
+	animation: animate 4s ease-in-out infinite;
+}
+
+.content2 p {
+	color: #03a9f4;
+	font-size: 3.5em;
+	position: absolute;
+}
+
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
+
+.slideanim {
+  visibility:visible;
+  visibility:visible\9;/*For old IE browsers IE6-8 */
+}
+.slideanim.slide {                  
+  visibility: visible;                  
+  animation: slide 1s;
+}
+.slideanim::after {
+  /* useful when its child elements are float:left; */
+  content: "";
+  display: table;
+  clear: both;
+}
+@keyframes slide {
+  0% {
+      opacity: 0;
+      filter: blur(15px);
+      transform: translateY(50%);
+  } 
+  100% {
+      opacity: 1;
+      filter: blur(0px);
+      transform: translateY(0);
+  } 
+}
+
+.fadeanim {
+  visibility:visible;
+  visibility:visible\9;/*For old IE browsers IE6-8 */
+}
+.fadeanim.fade {                  
+  visibility: visible;                  
+  animation: fade 1s;
+}
+.fadeanim::after {
+  /* useful when its child elements are float:left; */
+  content: "";
+  display: table;
+  clear: both;
+}
+@keyframes fade {
+  0% {
+      opacity: 0;
+      filter: blur(15px);
+  } 
+  100% {
+      opacity: 1;
+      filter: blur(0px);
+  } 
+}
+
+.left {
+  align-self: flex-start;
+  text-align: center;
+  margin-left: 17.5%;
+  margin-bottom: 2%;
+}
+
+.right {
+  align-self: flex-end;
+  text-align: center;
+  margin-right: 17.5%;
+  margin-bottom: 2%;
+}
+
+.center {
+  align-self: center;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 500px;
+  border-radius: 0.25em;
+  border: 3px solid #2303f4;
+  border-bottom: 7px solid #2303f4;
+}
+
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  filter: blur(15px);
+  transition: 1s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  filter: blur(0);
+  opacity: 1;
+}
+
+.fade{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  filter: blur(15px);
+  transition: 1s all ease;
+}
+.fade.active{
+  filter: blur(0);
+  opacity: 1;
+}

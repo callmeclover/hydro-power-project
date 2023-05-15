@@ -1,5 +1,5 @@
 body {
-    height: 320%;
+    height: 437%;
     overflow-x: hidden;
 }
 
@@ -11,6 +11,13 @@ body {
   font-weight: 500;
   width: 500px;
   flex: 1;
+}
+
+.scrdwn {
+  color: black;
+  position: absolute;
+  top: 0;
+  left: 50%;
 }
 
 a {
@@ -36,7 +43,7 @@ a:hover {
 .act-bg {
     background: linear-gradient(#80cbd1, #57BBC1, #408a8f, #2a5b5e, #142f30);
     width: 200%;
-    height: 399%;
+    height: 420%;
     position:absolute;
     right: 0px;
     top: 950px;

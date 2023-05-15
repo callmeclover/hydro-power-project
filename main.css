@@ -1,5 +1,5 @@
 body {
-    height: 437%;
+    height: 447%;
     overflow-x: hidden;
 }
 
@@ -36,7 +36,7 @@ a:hover {
 .act-bg {
     background: linear-gradient(#80cbd1, #57BBC1, #408a8f, #2a5b5e, #142f30);
     width: 200%;
-    height: 420%;
+    height: 430%;
     position:absolute;
     right: 0px;
     top: 950px;
